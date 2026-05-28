@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <title>Mini Project Travel Company App Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- Beam -->
@@ -234,7 +235,43 @@
   
 
     <!-- Best(Thana) -->
-    <section>Section 4</section>
+    <section class="w-full flex flex-col sm:flex-row">
+      <div class="w-full lg:w-[55%] flex flex-col gap-6">
+        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4 -mx-4 px-4 lg:mx-0 lg:px-0">
+          <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-full aspect-[3/4] text-[#FFFFFF] p-5">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins'] font-bold">Great Wall of China</h2>
+                <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins'] font-bold">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <header class="flex flex-col justify-center items-center bg-yellow-100 p-4 gap-10">
+        <div class="flex flex-col gap-8 items-start">
+          <h1 class="font-['Poppins'] font-bold text-5xl text-[#221314]">Most Popular Destination of Us!</h1>
+          <p class="text-lg font-['DM_Sans'] font-normal text-[#625858]">Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer </p>
+        </div>
+        <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-full aspect-[3/4] text-[#FFFFFF] p-5 sm:hidden">
+          <div class="flex justify-between w-full">
+            <div class="flex flex-col">
+              <h2 class="font-['Poppins'] font-bold">Great Wall of China</h2>
+              <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+            </div>
+            <div class="flex items-center gap-2 mb-2 font-['Poppins'] font-bold">
+              <span>4.8</span>
+              <span>★</span>
+            </div>
+          </div>
+        </article>
+        <button class="bg-[]">View All→</button>
+      </header>
+    </section>
 
     <!-- Best(Thana) -->
     <section>Section 5</section>
