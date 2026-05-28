@@ -9,99 +9,290 @@
   </head>
   <body>
     <!-- Beam -->
-    <section>Section 1</section>
+    <section
+      id="hero"
+      class="relative bg-[url('public/image/Mountain.png')] h-[1200px] md:h-[900px] mb-[100px] bg-cover bg-no-repeat bg-[center_top_-150px] md:bg-center"
+      style="overflow: visible"
+    >
+      <nav
+        class="absolute top-0 left-0 w-full px-6 md:px-16 py-6 flex items-center justify-between z-50"
+      >
+        <span
+          class="font-['BalooBhai2'] text-[28px] md:text-[40px] font-[700] leading-[100%] text-[#221314] md:ml-[180px]"
+        >
+          Tripp<span class="text-[#FF6B3D]">.</span>
+        </span>
+
+        <ul
+          class="hidden md:flex absolute left-1/2 -translate-x-1/2 text-[16px] font-[500] leading-[100%] tracking-[0] text-[#A8A8A8] gap-14 items-center"
+        >
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Tour Package</a
+            >
+          </li>
+        </ul>
+
+        <button
+          class="hidden md:block w-[175px] h-[64px] rounded-[15px] text-[16px] font-[500] leading-[100%] ml-auto mr-32 text-white"
+          style="background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%)"
+        >
+          Contact Us
+        </button>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <label
+          for="menu-toggle"
+          class="md:hidden ml-auto cursor-pointer p-2 relative z-[60]"
+        >
+          <img src="public/icon/hamburger.svg" width="24" height="24" />
+        </label>
+
+        <div
+          class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white shadow-xl md:hidden z-50 border-t border-gray-100 flex-col"
+        >
+          <ul
+            class="flex flex-col p-6 gap-4 text-[16px] font-[500] text-[#A8A8A8]"
+          >
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Tour Package</a
+              >
+            </li>
+            <li>
+              <button
+                class="w-full h-[54px] rounded-[15px] text-white font-[700] mt-2 hover:opacity-90 hover:scale-[1.02] hover:shadow-md transition-all duration-200"
+                style="
+                  background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%);
+                "
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <img
+        src="public/icon/Group_5815.svg"
+        class="absolute w-[283px] h-[275px] top-[103px] left-[46px] md:w-[592px] md:h-[576px] md:top-[206px] md:left-[1017px]"
+      />
+
+      <section
+        class="absolute w-[327px] top-[450px] left-[24px] md:w-[600px] md:top-[280px] md:left-[150px] z-10"
+      >
+        <h1
+          class="font-['PaytoneOne'] w-full text-[40px] md:text-[100px] font-[400] leading-[45px] md:leading-[115px] tracking-[0] text-[#221314]"
+        >
+          Fuel Mind by Travel
+        </h1>
+        <p
+          class="text-[18px] md:text-[20px] font-[400] leading-[32px] md:leading-[36px] tracking-[0] text-[#5A7184] mt-6 md:max-w-[480px]"
+        >
+          Enthusiastically extend extensive customer service before best breed
+          convergence completely.
+        </p>
+      </section>
+
+      <div
+        class="absolute bg-white rounded-[6px] overflow-hidden md:block hidden"
+        style="
+          width: 160px;
+          height: 181px;
+          top: 383px;
+          left: 920px;
+          border: 0.32px solid #ffffff;
+        "
+      >
+        <div
+          class="bg-[#C4C4C4] rounded-[6px] flex items-center justify-center mx-auto mt-3"
+          style="width: 131px; height: 79px"
+        ></div>
+        <p class="text-[10px] font-[500] leading-[100%] px-5 mt-4">
+          Mountain Scot
+        </p>
+        <div class="flex pl-5 mt-2">
+          <div
+            class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4]"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4] -ml-2"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4] -ml-2"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[37px] h-[37px] rounded-full bg-[#DEDEDE] -ml-2 flex items-center justify-center text-[10px] font-[500] text-[#7A7474]"
+            style="border: 0.32px solid #ffffff"
+          >
+            +
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute bg-white rounded-[6px] overflow-hidden md:hidden"
+        style="
+          width: 76.7px;
+          height: 86.76px;
+          top: 187.76px;
+          left: 10px;
+          border: 0.32px solid #ffffff;
+        "
+      >
+        <div
+          class="bg-[#C4C4C4] rounded-[3px] flex items-center justify-center mx-auto mt-[6px]"
+          style="width: 64.13px; height: 37.72px"
+        ></div>
+        <p class="text-[4.88px] font-[500] leading-[100%] px-[9px] mt-[6px]">
+          Mountain Scot
+        </p>
+        <div class="flex pl-[6px] mt-1">
+          <div
+            class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4]"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4] -ml-1"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4] -ml-1"
+            style="border: 0.32px solid #ffffff"
+          ></div>
+          <div
+            class="w-[14px] h-[14px] rounded-full bg-[#DEDEDE] -ml-1 flex items-center justify-center text-[7px] font-[500] text-[#7A7474]"
+            style="border: 0.32px solid #ffffff"
+          >
+            +
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="trip-filter-bar"
+        class="absolute flex flex-col md:flex-row md:items-center bg-white rounded-[15px] drop-shadow-sm w-[327px] md:w-[1057px] h-auto md:h-[140px] left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[672px] top-[700px] md:top-[830px] z-20"
+      >
+        <div
+          class="flex flex-col items-center gap-5 py-8 md:flex-row md:items-center"
+        >
+          <div
+            class="flex flex-col items-center md:items-start md:justify-center md:pl-16 md:pr-8 md:h-full md:w-[200px]"
+          >
+            <div class="flex items-center gap-1">
+              <span class="text-[16px] font-[500] text-[#A8A8A8]"
+                >Location</span
+              >
+              <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+            </div>
+            <span class="text-[16px] font-[700] text-[#221314] mt-1"
+              >Cox's Bazar</span
+            >
+          </div>
+
+          <div
+            class="w-[37px] h-[1px] md:w-[1px] md:h-[37px] opacity-20"
+            style="background-color: #000000; border-left-width: 0px"
+          ></div>
+
+          <div
+            class="flex flex-col items-center md:items-start md:justify-center md:px-10 md:h-full md:w-[280px]"
+          >
+            <div class="flex items-center gap-1">
+              <span class="text-[16px] font-[500] text-[#A8A8A8]">Date</span>
+              <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+            </div>
+            <span class="text-[16px] font-[700] text-[#221314] mt-1"
+              >Mon, 14 Mar – Thu, 17 Mar</span
+            >
+          </div>
+
+          <div
+            class="w-[37px] h-[1px] md:w-[1px] md:h-[37px] opacity-20"
+            style="background-color: #000000; border-left-width: 0px"
+          ></div>
+
+          <div
+            class="flex flex-col items-center md:items-start md:justify-center md:px-10 md:h-full md:w-[200px]"
+          >
+            <div class="flex items-center gap-1">
+              <span class="text-[16px] font-[500] text-[#A8A8A8]"
+                >Avg. Price</span
+              >
+              <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+            </div>
+            <span class="text-[16px] font-[700] text-[#221314] mt-1"
+              >$300 – $600</span
+            >
+          </div>
+        </div>
+
+        <button
+          class="w-[177px] h-[70px] rounded-[15px] font-[500] text-white flex items-center justify-center gap-3 flex-shrink-0 mx-auto mb-10 md:mx-0 md:mb-0 md:ml-auto md:mr-10"
+          style="
+            background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%);
+            font-size: 16px;
+            line-height: 100%;
+          "
+        >
+          Explore
+          <img src="public/icon/bi_arrow-left.svg" width="24" height="24" />
+        </button>
+      </div>
+    </section>
 
     <!-- Job -->
-     <!-- ============================
-       Service Vacations SECTION
-      ============================ -->
-    
-    <body class="bg-[#f8f8f8] font-sans">
-    
-      <section class="max-w-6xl mx-auto px-6 py-16">
-    
-        <!-- Header -->
-        <div class="flex flex-row items-end justify-between mb-10 gap-2 w-full">
-  <div>
-    <h1 class="text-xl sm:text-2xl md:text-4xl font-bold text-[#2b1f1f] leading-tight">
-      Start Your <br class="md:hidden" />
-      Vacation with <br class="md:hidden" />
-      Lots of Services!
-    </h1>
-  </div>
-  <div class="flex-shrink-0 pb-1">
-    <a href="#" class="text-sm text-orange-400 font-medium hover:underline whitespace-nowrap">
-      View All<span class="hidden md:inline"> Services</span> →
-    </a>
-  </div>
-</div>
-    
-        <!-- Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-          <!-- Card 1 -->
-          <div class="w-full aspect-square md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-4 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex flex-col justify-center items-center">
-  
-            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center flex-shrink-0">
-              <img src="./icon/family.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
-            </div>
-          
-            <h3 class="font-semibold text-gray-800 text-lg leading-tight">Family Vacations</h3>
-            
-            <p class="text-sm text-gray-400 mt-2">155 Properties</p>
-          
-          </div>
-    
-          <!-- Card 2 -->
-          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
-            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
-              <img src="./icon/scuba-diving.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
-            </div>
-    
-            <h3 class="font-semibold text-gray-800">
-              Scuba Diving
-            </h3>
-    
-            <p class="text-sm text-gray-400 mt-2">
-              143 Properties
-            </p>
-          </div>
-    
-          <!-- Card 3 -->
-          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
-            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
-              <img src="./icon/deer-facing-right.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
-            </div>
-    
-            <h3 class="font-semibold text-gray-800">
-              Hunting Trip
-            </h3>
-    
-            <p class="text-sm text-gray-400 mt-2">
-              122 Properties
-            </p>
-          </div>
-    
-          <!-- Card 4 -->
-          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
-            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
-              <img src="./icon/mountain-bike.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
-            </div>
-    
-            <h3 class="font-semibold text-gray-800">
-              Mountain Bike
-            </h3>
-    
-            <p class="text-sm text-gray-400 mt-2">
-              185 Properties
-            </p>
-          </div>
-    
-        </div>
-      </section>
-    
-    </body>
-    </html>
+    <section>Section 2</section>
 
     <!-- Anthony -->
      <!-- ============================
