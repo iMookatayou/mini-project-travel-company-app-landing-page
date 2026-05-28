@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <title>Mini Project Travel Company App Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Beam -->
@@ -13,7 +14,135 @@
     <section>Section 2</section>
 
     <!-- Anthony -->
-    <section>Section 3</section>
+     <!-- ============================
+       TOUR PACKAGES SECTION
+      ============================ -->
+    <section class="py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+ 
+    <!-- Section Heading -->
+    <header class="text-center mb-14">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 leading-tight">
+        Our Upcoming<br>Tour Package
+      </h2>
+    </header>
+ 
+    <!-- Cards Grid -->
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none">
+ 
+      <!-- Card 1 — Eiffel Tower -->
+      <li>
+        <article class="group cursor-pointer">
+          <!-- Image -->
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img 
+              src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Eiffel Tower, Paris"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Price badge -->
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $599
+            </span>
+          </div>
+          <!-- Card Info -->
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Eiffel Tower</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <!-- Stars -->
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+ 
+      <!-- Card 2 — Big Bear Lake (featured / taller) -->
+      <li class="hidden sm:block sm:col-span-1 lg:-mt-6">
+        <article class="group cursor-pointer">
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1638772479386-e1dcf67bd720?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Big Bear Lake"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $480
+            </span>
+          </div>
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Big Bear Lake</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+ 
+      <!-- Card 3 — Colorado Springs -->
+      <li class="hidden sm:block">
+        <article class="group cursor-pointer">
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1581552936330-f8eb487334e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Colorado Springs"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $550
+            </span>
+          </div>
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Colorado Springs</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+
+    </ul>
+ 
+    <!-- View All Button -->
+      <div class="flex justify-center mt-14">
+        <a
+          href="#"
+          class="inline-flex items-center gap-2 bg-[#FE6642] text-white font-semibold px-8 py-3 rounded-2xl hover:opacity-90 active:scale-95 transition-all duration-200"
+        >
+        View All
+          <img src="public/icon/Vector.svg" alt="Arrow" class="w-4 h-4">
+        </a>
+      </div>
+    </section>
+  
 
     <!-- Best(Thana) -->
     <section>Section 4</section>
