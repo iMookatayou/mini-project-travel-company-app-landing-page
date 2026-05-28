@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "BalooBhai2";
+  src: url("public/font/BalooBhai2-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PaytoneOne";
+  src: url("public/font/PaytoneOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("public/font/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
