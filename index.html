@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <title>Mini Project Travel Company App Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- Beam -->
@@ -234,7 +235,101 @@
   
 
     <!-- Best(Thana) -->
-    <section>Section 4</section>
+    <section class="w-full flex flex-col sm:flex-row mt-10 mb-10">
+      <div class="w-full sm:w-[58%] gap-6 justify-center hidden sm:flex sm:flex-col">
+        <div class="flex gap-7 items-center justify-center overflow-hidden mx-auto w-full max-w-[980px] -translate-x-[100px]">
+          <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1582895516735-25a974f11f2c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Great Wall of China</h2>
+                <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+          </article>
+          <div>
+            <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1516557139510-13450f7d3124?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Lake Powell</h2>
+                <p class="font-['DM_Sans'] font-normal">U.S.A</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+            </article>
+            <div class="flex items-center justify-center gap-6 p-4">
+              <button class="text-[#ff7e42]/40 hover:text-[#ff7e42] transition-colors duration-200 cursor-pointer focus:outline-none" aria-label="Previous slide">
+                <img src="public\icon\arrow-left.svg" alt="left arrow" class="">
+              </button>
+              <button class="text-[#ff7e42] hover:scale-110 transition-transform duration-200 cursor-pointer focus:outline-none" aria-label="Next slide">
+                <img src="public\icon\arrow-right.svg" alt="right arrow" class="">
+                </svg>
+              </button>
+            </div>
+          </div>
+          <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1642053446413-c64f77962d4b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Deep Creek Lake</h2>
+                <p class="font-['DM_Sans'] font-normal">Maryland</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <header class="flex flex-col justify-center items-center p-4 gap-10 w-full sm:w-[42%] sm:items-start">
+        <div class="flex flex-col gap-8 items-start w-full">
+          <h1 class="font-['Poppins-bold'] text-5xl text-[#221314]">Most Popular Destination of Us!</h1>
+          <p class="text-lg font-['DM_Sans'] font-normal text-[#625858]">Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer </p>
+        </div>
+        <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-3/4 text-[#FFFFFF] p-5 sm:hidden aspect-[3/4] bg-[url('https://images.unsplash.com/photo-1582895516735-25a974f11f2c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+          <div class="flex justify-between w-full">
+            <div class="flex flex-col">
+              <h2 class="font-['Poppins-bold'] font-bold">Great Wall of China</h2>
+              <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+            </div>
+            <div class="flex items-center gap-2 mb-2 font-['Poppins'] font-bold">
+              <span>4.8</span>
+              <span>★</span>
+            </div>
+          </div>
+        </article>
+        <div class="flex items-center gap-8 justify-center p-8 sm:hidden">
+          <label class="group relative flex items-center justify-center w-14 h-14 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-5 h-5 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+          <label class="group relative flex items-center justify-center w-14 h-14 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-5 h-5 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+          <label class="group relative flex items-center justify-center w-14 h-14 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-5 h-5 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+        </div>
+        <button class="flex items-center gap-2 bg-[#FE7B49] hover:bg-[#FE5B3E] text-white font-medium px-7 py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer group">
+          <span class="font-['DM_Sans'] text-base font-bold">View All</span>
+          <span class="group-hover:translate-x-1 transition-transform duration-200">&#8594;</span>
+        </button>
+      </header>
+    </section>
 
     <!-- Best(Thana) -->
     <section>Section 5</section>
