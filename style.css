@@ -17,6 +17,11 @@ body {
 }
 
 @font-face {
+  font-family: "Poppins bold";
+  src: url("public/font/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "DM Sans";
   src: url("./public/font/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
   font-style: normal;
@@ -37,5 +42,3 @@ body {
   font-family: "PaytoneOne";
   src: url("public/font/PaytoneOne-Regular.ttf") format("truetype");
 }
-
-
