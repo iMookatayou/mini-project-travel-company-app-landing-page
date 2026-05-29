@@ -4,27 +4,733 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <title>Mini Project Travel Company App Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- Beam -->
-    <section>Section 1</section>
+    <section
+        id="hero"
+        class="relative bg-[url('public/image/Mountain.png')] h-[1200px] md:h-[900px] mb-[100px] bg-cover bg-no-repeat bg-[center_top_-150px] md:bg-center"
+        style="overflow: visible"
+    >
+      <nav
+        class="absolute top-0 left-0 w-full px-6 md:px-16 py-6 flex items-center justify-between z-50"
+      >
+        <span
+          class="font-['BalooBhai2'] text-[28px] md:text-[40px] font-[700] leading-[100%] text-[#221314] md:ml-[180px]"
+        >
+          Tripp<span class="text-[#FF6B3D]">.</span>
+        </span>
+
+        <ul
+          class="hidden md:flex absolute left-1/2 -translate-x-1/2 text-[16px] font-[500] leading-[100%] tracking-[0] text-[#A8A8A8] gap-14 items-center"
+        >
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:border-b-2 hover:border-[#FF6525] hover:text-black"
+              href="#"
+              >Tour Package</a
+            >
+          </li>
+        </ul>
+
+        <button
+          class="hidden md:block w-[175px] h-[64px] rounded-[15px] text-[16px] font-[500] leading-[100%] ml-auto mr-32 text-white"
+          style="background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%)"
+        >
+          Contact Us
+        </button>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <label
+          for="menu-toggle"
+          class="md:hidden ml-auto cursor-pointer p-2 relative z-[60]"
+        >
+          <img src="public/icon/hamburger.svg" width="24" height="24" />
+        </label>
+
+        <div
+          class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white shadow-xl md:hidden z-50 border-t border-gray-100 flex-col"
+        >
+          <ul
+            class="flex flex-col p-6 gap-4 text-[16px] font-[500] text-[#A8A8A8]"
+          >
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-1 hover:text-black hover:border-b-2 hover:border-[#FF6525] transition-all"
+                href="#"
+                >Tour Package</a
+              >
+            </li>
+            <li>
+              <button
+                class="w-full h-[54px] rounded-[15px] text-white font-[700] mt-2 hover:opacity-90 hover:scale-[1.02] hover:shadow-md transition-all duration-200"
+                style="
+                  background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%);
+                "
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section
+        class="absolute w-[327px] top-[445px] left-[24px] md:w-[600px] md:top-[280px] md:left-[150px] z-10"
+      >
+        <h1
+            class="font-['PaytoneOne'] w-full text-[30px] leading-[42px] md:text-[100px] md:leading-[115px] font-[400] tracking-[0] text-[#221314]"
+        >
+            Fuel Mind <br class="md:hidden" />by Travel
+        </h1>
+        
+        <p
+            class="text-[18px] md:text-[20px] font-[400] leading-[30px] md:leading-[36px] tracking-[0] text-[#5A7184] mt-5 md:mt-6 md:max-w-[480px]"
+        >
+            Enthusiastically extend extensive customer service before best 
+            <br class="md:hidden" />breed convergence completely.
+        </p>
+      </section>
+
+      <div class="absolute top-[103px] left-[50px] w-[283px] h-[275px] md:top-[180px] md:left-auto md:right-[150px] md:w-[592px] md:h-auto z-0 pointer-events-none">
+  
+        <img src="public/icon/Group_5815.svg" class="w-full h-full object-contain md:h-auto" />
+        
+        <div class="absolute bg-white rounded-[6px] shadow-xl md:block hidden pointer-events-auto"
+          style="width: 160px; height: 181px; top: 180px; left: -100px; border: 0.32px solid #ffffff;">
+          <div class="bg-[#C4C4C4] rounded-[6px] flex items-center justify-center mx-auto mt-3" style="width: 131px; height: 79px"></div>
+          <p class="text-[10px] font-[500] px-5 mt-4">Mountain Scot</p>
+          <div class="flex pl-5 mt-2">
+            <div class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4] border border-white"></div>
+            <div class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4] border border-white -ml-2"></div>
+            <div class="w-[37px] h-[37px] rounded-full bg-[#C4C4C4] border border-white -ml-2"></div>
+            <div class="w-[37px] h-[37px] rounded-full bg-[#DEDEDE] border border-white -ml-2 flex items-center justify-center text-[10px] text-[#7A7474]">+</div>
+          </div>
+        </div>
+      
+        <div class="absolute bg-white rounded-[6px] shadow-md md:hidden pointer-events-auto"
+          style="width: 76.7px; height: 86.76px; top: 80px; left: -40px; border: 0.32px solid #ffffff;">
+          <div class="bg-[#C4C4C4] rounded-[3px] flex items-center justify-center mx-auto mt-[6px]" style="width: 64.13px; height: 37.72px"></div>
+          <p class="text-[4.88px] font-[500] px-[9px] mt-[6px]">Mountain Scot</p>
+          <div class="flex pl-[6px] mt-1">
+            <div class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4] border border-white"></div>
+            <div class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4] border border-white -ml-1"></div>
+            <div class="w-[14px] h-[14px] rounded-full bg-[#C4C4C4] border border-white -ml-1"></div>
+            <div class="w-[14px] h-[14px] rounded-full bg-[#DEDEDE] border border-white -ml-1 flex items-center justify-center text-[7px] text-[#7A7474]">+</div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div
+        id="trip-filter-bar"
+        class="absolute flex flex-col md:flex-row md:items-center bg-white rounded-[15px] drop-shadow-sm w-[327px] md:w-[1057px] h-auto md:h-[140px] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 lg:right-16 xl:right-[100px] top-[675px] md:top-[830px] z-20"
+      >
+
+      <div
+        class="flex flex-col items-center gap-5 py-8 md:flex-row md:items-center"
+      >
+
+      <div
+        class="flex flex-col items-center md:items-start md:justify-center md:pl-16 md:pr-8 md:h-full md:w-[200px]"
+      >
+        <div class="flex items-center gap-1">
+            <span class="text-[16px] font-[500] text-[#A8A8A8]">Location</span>
+            <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+        </div>
+       <span class="text-[16px] font-[700] text-[#221314] mt-1">Cox's Bazar</span>
+      </div>
+
+      <div
+        class="w-[37px] h-[1px] md:w-[1px] md:h-[37px] opacity-20 bg-[#000000]"
+      ></div>
+
+      <div class="flex flex-col items-center md:items-start md:justify-center md:px-10 md:h-full md:w-[280px]">
+        <div class="flex items-center gap-1">
+          <span class="text-[16px] font-[500] text-[#A8A8A8]">Date</span>
+          <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+        </div>
+        <span class="text-[16px] font-[700] text-[#221314] mt-1 whitespace-nowrap">Mon, 14 Mar – Thu, 17 Mar</span>
+      </div>
+
+      <div
+        class="w-[37px] h-[1px] md:w-[1px] md:h-[37px] opacity-20 bg-[#000000]"
+      ></div>
+
+      <div
+        class="flex flex-col items-center md:items-start md:justify-center md:px-10 md:h-full md:w-[200px]"
+      >
+        <div class="flex items-center gap-1">
+            <span class="text-[16px] font-[500] text-[#A8A8A8]">Avg. Price</span>
+            <img src="public/icon/fe_arrow-down.svg" width="16" height="16" />
+        </div>
+        <span class="text-[16px] font-[700] text-[#221314] mt-1">$300 – $600</span>
+        </div>
+    </div>
+
+        <button
+            class="w-[177px] h-[70px] rounded-[15px] font-[500] text-white flex items-center justify-center gap-3 flex-shrink-0 mx-auto mb-10 md:mx-0 md:mb-0 md:ml-auto md:mr-10"
+            style="background: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%); font-size: 16px; line-height: 100%;"
+        >
+            Explore
+            <img src="public/icon/bi_arrow-left.svg" width="24" height="24" />
+        </button>
+      </div>
+    </section>
 
     <!-- Job -->
-    <section>Section 2</section>
+     <!-- ============================
+       Service Vacations SECTION
+      ============================ -->
+    
+    <body class="bg-[#f8f8f8] font-sans">
+    
+      <section class="max-w-6xl mx-auto px-6 py-16">
+    
+        <!-- Header -->
+        <div class="flex flex-row items-end justify-between mb-10 gap-2 w-full">
+  <div>
+    <h1 class="text-xl sm:text-2xl md:text-4xl font-bold text-[#2b1f1f] leading-tight">
+  
+      <!-- Mobile -->
+      <span class="block md:hidden">
+        Start Your <br />
+        Vacation with <br />
+        Lots of Services!
+      </span>
+    
+      <!-- Desktop -->
+      <span class="hidden md:block">
+        Start Your Vacation <br />
+        with Lots of Services!
+      </span>
+    
+    </h1>
+  </div>
+  <div class="flex-shrink-0 pb-1">
+    <a href="#" class="text-sm text-orange-400 font-medium hover:underline whitespace-nowrap">
+      View All<span class="hidden md:inline"> Services</span> →
+    </a>
+  </div>
+</div>
+    
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+          <!-- Card 1 -->
+          <div class="w-full aspect-square md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-4 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex flex-col justify-center items-center">
+  
+            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center flex-shrink-0">
+              <img src="./icon/family.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
+            </div>
+          
+            <h3 class="font-semibold text-gray-800 text-lg leading-tight">Family Vacations</h3>
+            
+            <p class="text-sm text-gray-400 mt-2">155 Properties</p>
+          
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
+            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
+              <img src="./icon/scuba-diving.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
+            </div>
+    
+            <h3 class="font-semibold text-gray-800">
+              Scuba Diving
+            </h3>
+    
+            <p class="text-sm text-gray-400 mt-2">
+              143 Properties
+            </p>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
+            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
+              <img src="./icon/deer-facing-right.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
+            </div>
+    
+            <h3 class="font-semibold text-gray-800">
+              Hunting Trip
+            </h3>
+    
+            <p class="text-sm text-gray-400 mt-2">
+              122 Properties
+            </p>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="hidden md:flex w-full md:aspect-auto md:h-[240px] bg-white rounded-[24px] border border-gray-100 p-6 md:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-lg transition flex-col justify-center items-center">
+            <div class="w-14 h-14 mx-auto mb-4 bg-[#FE5B3E1A] rounded-xl flex items-center justify-center">
+              <img src="./icon/mountain-bike.svg" alt="Family Icon" class="w-7 h-7 object-contain" />
+            </div>
+    
+            <h3 class="font-semibold text-gray-800">
+              Mountain Bike
+            </h3>
+    
+            <p class="text-sm text-gray-400 mt-2">
+              185 Properties
+            </p>
+          </div>
+    
+        </div>
+      </section>
+    
+    </body>
+    </html>
 
     <!-- Anthony -->
-    <section>Section 3</section>
+     <!-- ============================
+       TOUR PACKAGES SECTION
+      ============================ -->
+    <section class="font-['Poppins-bold'] py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+ 
+    <!-- Section Heading -->
+    <header class="text-center mb-14">
+      <h2 class=" text-2xl sm:text-4xl text-neutral-900 leading-tight">
+        Our Upcoming<br>Tour Package
+      </h2>
+    </header>
+ 
+    <!-- Cards Grid -->
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none">
+ 
+      <!-- Card 1 — Eiffel Tower -->
+      <li>
+        <article class="group cursor-pointer">
+          <!-- Image -->
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img 
+              src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Eiffel Tower, Paris"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Price badge -->
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $599
+            </span>
+          </div>
+          <!-- Card Info -->
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Eiffel Tower</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <!-- Stars -->
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+ 
+      <!-- Card 2 — Big Bear Lake (featured / taller) -->
+      <li class="hidden sm:block sm:col-span-1 lg:-mt-6">
+        <article class="group cursor-pointer">
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1638772479386-e1dcf67bd720?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Big Bear Lake"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $480
+            </span>
+          </div>
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Big Bear Lake</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+ 
+      <!-- Card 3 — Colorado Springs -->
+      <li class="hidden sm:block">
+        <article class="group cursor-pointer">
+          <div class="relative rounded-2xl overflow-hidden bg-gray-300 aspect-[4/5]">
+            <img
+              src="https://images.unsplash.com/photo-1581552936330-f8eb487334e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Colorado Springs"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <span class="absolute top-4 right-4 text-white font-bold text-lg drop-shadow-md">
+              $550
+            </span>
+          </div>
+          <footer class="mt-3 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-1 mb-0.5">
+                <img src="public/icon/Location.svg" alt="Location Marker Icon" class="w-4 h-4 ">
+                <h3 class="font-bold text-neutral-900 text-base">Colorado Springs</h3>
+              </div>
+              <p class="text-sm text-gray-400 ml-5">5d - 4n</p>
+            </div>
+            <div class="flex items-center gap-0.5 mt-1" aria-label="5 star rating">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+              <img src="public/icon/Star.svg" alt="Star Icon" class="w-4 h-4 ">
+            </div>
+          </footer>
+        </article>
+      </li>
+
+    </ul>
+ 
+    <!-- View All Button -->
+      <div class="flex justify-center mt-14">
+        <a
+          href="#"
+          class="inline-flex items-center gap-2 bg-[#FE6642] text-white font-semibold px-8 py-3 rounded-2xl hover:opacity-90 active:scale-95 transition-all duration-200"
+        >
+        View All
+          <img src="public/icon/Vector.svg" alt="Arrow" class="w-4 h-4">
+        </a>
+      </div>
+    </section>
+  
 
     <!-- Best(Thana) -->
-    <section>Section 4</section>
+    <section class="w-full flex flex-col sm:flex-row mt-10 mb-10">
+      <div class="w-full sm:w-[58%] gap-6 justify-center hidden sm:flex sm:flex-col">
+        <div class="flex gap-7 items-center justify-center overflow-hidden mx-auto w-full max-w-[980px] -translate-x-[100px]">
+          <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1582895516735-25a974f11f2c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Great Wall of China</h2>
+                <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+          </article>
+          <div>
+            <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1516557139510-13450f7d3124?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Lake Powell</h2>
+                <p class="font-['DM_Sans'] font-normal">U.S.A</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+            </article>
+            <div class="flex items-center justify-center gap-6 p-4">
+              <button class="text-[#ff7e42]/40 hover:text-[#ff7e42] transition-colors duration-200 cursor-pointer focus:outline-none" aria-label="Previous slide">
+                <img src="public\icon\arrow-left.svg" alt="left arrow" class="">
+              </button>
+              <button class="text-[#ff7e42] hover:scale-110 transition-transform duration-200 cursor-pointer focus:outline-none" aria-label="Next slide">
+                <img src="public\icon\arrow-right.svg" alt="right arrow" class="">
+                </svg>
+              </button>
+            </div>
+          </div>
+          <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-[280px] aspect-[3/4] text-[#FFFFFF] p-5 bg-[url('https://images.unsplash.com/photo-1642053446413-c64f77962d4b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col">
+                <h2 class="font-['Poppins-bold']">Deep Creek Lake</h2>
+                <p class="font-['DM_Sans'] font-normal">Maryland</p>
+              </div>
+              <div class="flex items-center gap-2 mb-2 font-['Poppins-bold']">
+                <span>4.8</span>
+                <span>★</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <header class="flex flex-col justify-center items-center p-4 gap-10 w-full sm:w-[42%] sm:items-start">
+        <div class="flex flex-col gap-8 items-start w-full">
+          <h1 class="font-['Poppins-bold'] text-2xl sm:text-5xl text-[#221314]">Most Popular Destination of Us!</h1>
+          <p class="text-lg font-['DM_Sans'] font-normal text-[#625858]">Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer </p>
+        </div>
+        <article class="bg-[#C4C4C4] rounded-[20px] flex flex-col justify-end items-center w-3/4 text-[#FFFFFF] p-5 sm:hidden aspect-[3/4] bg-[url('https://images.unsplash.com/photo-1582895516735-25a974f11f2c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+          <div class="flex justify-between w-full">
+            <div class="flex flex-col">
+              <h2 class="font-['Poppins-bold'] font-bold">Great Wall of China</h2>
+              <p class="font-['DM_Sans'] font-normal">Beijing, China</p>
+            </div>
+            <div class="flex items-center gap-2 mb-2 font-['Poppins'] font-bold">
+              <span>4.8</span>
+              <span>★</span>
+            </div>
+          </div>
+        </article>
+        <div class="flex items-center gap-5 justify-center p-8 sm:hidden">
+          <label class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-2 h-2 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+          <label class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-2 h-2 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+          <label class="group relative flex items-center justify-center w-6 h-6 cursor-pointer">
+            <input type="radio" name="step-group" class="sr-only" checked />
+            <div class="absolute inset-0 bg-[#e5e1dc] rounded-full flex items-center justify-center transition-all duration-200 group-has-[:checked]:bg-transparent group-has-[:checked]:border-2 group-has-[:checked]:border-[#ff7e42]">
+              <div class="w-2 h-2 bg-[#ff7e42] rounded-full scale-0 group-has-[:checked]:scale-100 transition-transform duration-200"></div>
+            </div>
+          </label>
+        </div>
+        <button class="flex items-center gap-2 bg-[#FE7B49] hover:bg-[#FE5B3E] text-white font-medium px-7 py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer group">
+          <span class="font-['DM_Sans'] text-base font-bold">View All</span>
+          <span class="group-hover:translate-x-1 transition-transform duration-200">&#8594;</span>
+        </button>
+      </header>
+    </section>
 
     <!-- Best(Thana) -->
-    <section>Section 5</section>
+    <section class="w-full flex flex-col sm:flex-row justify-between gap-6 my-16 flex-wrap sm:flex-nowrap">
+      <div class="w-full sm:w-[58%] justify-center items-center flex">
+        <img src="public/icon/Group_5815.svg" class="w-[50%] h-full object-contain sm:h-auto" />
+      </div>
+      <header class="flex flex-col justify-center items-start p-4 gap-10 w-full sm:w-[42%]">
+        <div class="flex flex-col gap-8 items-start w-full">
+          <h1 class="font-['Poppins-bold'] text-2xl text-[#221314] sm:text-5xl">Feedback from Our Customers</h1>
+          <p class="text-2xl font-['DMSans'] font-semibold text-[#221314]">“I’ve  Went ot America from Tripp Play  about 1 years ago. Tripp make the prototyping process so easy and faster. I feel this is the best apps for Prototyping use”</p>
+          <p class="text-lg font-['DM_Sans'] font-normal text-[#5A7184]">— Ferdous - CEO of Coco</p>
+        </div>
+        <div class="flex items-center justify-center gap-6 p-4">
+          <button class="hover:scale-110 hover:opacity-100 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-0 opacity-25" aria-label="Previous slide">
+            <img src="public\icon\button-right.svg" alt="left button">
+          </button>
+          <button class="hover:scale-110 hover:opacity-100 hover:-scale-x-100 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-0 opacity-25 -scale-x-100" aria-label="Previous slide">
+            <img src="public\icon\button-right.svg" alt="right button">
+          </button>
+        </div>
+      </header>
+    </section>
 
     <!-- Beam -->
-    <section>Section 6</section>
+    <section class="relative w-full max-w-[1920px] mx-auto md:min-h-[1038px] py-4 md:py-0 my-8 md:my-20 overflow-visible">
+  
+        <div class="relative w-full flex justify-center px-4">
+          <h2 class="md:absolute md:top-[69px] w-full max-w-[574px] text-[32px] md:text-[48px] font-[700] font-['Poppins-bold'] leading-[40px] md:leading-[68px] text-center text-[#2D2D2D]">
+            World Top Visiting <br class="hidden md:block"> Place in 2021
+          </h2>
+        </div>
+      
+        <div class="relative w-full mt-10 md:mt-0 md:pt-[274px] flex justify-center px-4 md:px-0">
+          <div class="relative w-full md:w-[95%] max-w-[1500px]">
+            
+            <img src="public/image/Map.png" alt="World Map" class="w-full h-auto opacity-100 block">
+      
+            <div class="absolute top-[40.1%] left-[50.5%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10 w-[12%] md:w-[100px]">
+              <div class="w-full aspect-square rounded-full border-[3px] md:border-[6px] border-white shadow-2xl overflow-hidden bg-white">
+                <img src="public/image/france-flag.png" alt="France" class="w-full h-full object-cover">
+              </div>
+              
+              <div class="text-center mt-3 md:mt-[16px] w-max">
+                <h3 class="font-['Poppins bold'] font-[700] text-[18px] md:text-[24px] leading-[24px] md:leading-[32px] tracking-[0.2px] text-[#2D2D2D]">
+                  France
+                </h3>
+                <p class="font-[400] text-[14px] md:text-[18px] leading-[20px] md:leading-[28px] tracking-[0px] text-[#7B7B7B]">
+                  03 Tour
+                </p>
+              </div>
+            </div>
+      
+            <div class="absolute top-[41%] left-[18.3%] -translate-x-1/2 flex flex-col items-center z-10 w-[12%] md:w-[100px]">
+              <div class="w-full aspect-square rounded-full border-[3px] md:border-[6px] border-white shadow-2xl overflow-hidden bg-white">
+                <img src="public/image/mexico-flag.png" alt="Mexico" class="w-full h-full object-cover">
+              </div>
+              <div class="text-center mt-3 w-max">
+                <h3 class="font-['Poppins bold'] font-[700] text-[18px] md:text-[24px] leading-[32px] tracking-[0.2px] text-[#2D2D2D]">Mexico</h3>
+                <p class="font-[400] text-[14px] md:text-[18px] leading-[28px] text-[#7B7B7B]">03 Tour</p>
+              </div>
+            </div>
+      
+            <div class="absolute top-[64%] right-[15.3%] translate-x-1/2 flex flex-col items-center z-10 w-[12%] md:w-[100px]">
+              <div class="w-full aspect-square rounded-full border-[3px] md:border-[6px] border-white shadow-2xl overflow-hidden bg-white">
+                <img src="public/image/australia-flag.png" alt="Australia" class="w-full h-full object-cover">
+              </div>
+              <div class="text-center mt-3 w-max">
+                <h3 class="font-['Poppins bold'] font-[700] text-[18px] md:text-[24px] leading-[32px] tracking-[0.2px] text-[#2D2D2D]">Australia</h3>
+                <p class="font-[400] text-[14px] md:text-[18px] leading-[28px] text-[#7B7B7B]">02 Tour</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
 
     <!-- Anthony -->
-    <section>Section 7</section>
+     <!-- ============================
+       CONTACT SECTION
+      ============================ -->
+      <!-- Section Heading -->
+    <section
+    class="relative min-h-[420px] flex flex-col justify-between px-8 sm:px-16 py-14 overflow-hidden bg-cover bg-center bg-no-repeat gap:5"
+    style="background-image: url('public/image/Forest-Background.png');"
+    aria-labelledby="subscribe-heading"
+    >
+    <!-- Light overlay to wash out the image like the design -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#F8F8F8] via-[#F8F8F8]/60 to-transparent"></div>
+ 
+    <!-- Content -->
+    <div class="relative z-10">
+ 
+      <!-- Heading -->
+      <header class="mb-10">
+        <h2 id="subscribe-heading" class="text-3xl sm:text-4xl font-extrabold text-neutral-900 leading-snug">
+          Subscribe<br>
+          for every Tour<br>
+          News &amp; Tips
+        </h2>
+      </header>
+ 
+      <!-- Subscribe Form -->
+      <form
+        class="flex justify-between items-center bg-white rounded-2xl shadow-md w-full max-w-md p-1.5"
+        onsubmit="return false"
+        >
+        <label for="email-input" class="sr-only">Enter your email</label>
+        <input
+        id="email-input"
+        type="email"
+        placeholder="Enter Your Email"
+        class="flex-1 px-4 py-2.5 text-sm text-gray-500 placeholder-gray-400 outline-none bg-transparent"
+        />
+        <button
+          type="submit"
+          class="inline-flex items-center gap-1.5 bg-[#FE6642] text-white text-xs sm:text-sm font-semibold px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl hover:opacity-90      transition-opacity duration-200 whitespace-nowrap flex-shrink-0"
+          >
+          Subscribe
+          <img src="public/icon/Vector.svg" alt="Arrow" class="w-3 h-3 sm:w-4 sm:h-4">
+        </button>
+      </form>
+ 
+          <!-- ============================
+       FOOTER
+        ============================ -->
+    <footer class="relative z-10  pt-6 mt-10">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 max-w-md">
+ 
+      <!-- Brand -->
+        <div>
+          <p class="font-['BalooBhai2'] text-3xl font-extrabold text-neutral-900">
+            Tripp<span class="text-[#FE6642]">.</span>
+          </p>
+          <small class="font-['DM Sans'] text-xs text-gray-400 mt-1 block">
+          Copyright &copy; Tripp. All right reserved
+          </small>
+        </div>
+ 
+      <!-- Social Icons -->
+        <nav aria-label="Social media links">
+          <ul class="flex items-center gap-5 list-none">
+ 
+          <!-- Google -->
+            <li>
+             <a href="#" aria-label="Google" class="text-gray-400 hover:text-[#FE6642] transition-colors duration-200">
+              <img src="public/icon/Google-icon.svg" alt="Google Icon" class="w-4 h-4 ">
+              </a>
+            </li>
+ 
+          <!-- Twitter / X -->
+           <li>
+              <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-[#FE6642] transition-colors duration-200">
+                <img src="public/icon/Twitter-icon.svg" alt="Twitter Icon" class="w-4 h-4 ">
+              </a>
+            </li>
+ 
+          <!-- Instagram -->
+            <li>
+              <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-[#FE6642] transition-colors duration-200">
+              <img src="public/icon/Instagram-icon.svg" alt="Instagram Icon" class="w-4 h-4 ">
+              </a>
+            </li>
+ 
+          <!-- LinkedIn -->
+            <li>
+              <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-[#FE6642]   transition-colors duration-200">
+                <img src="public/icon/LinkedIn-icon.svg" alt="LinkedIn Icon" class="w-4 h-4 ">
+              </a>
+            </li>
+ 
+          </ul>
+        </nav>
+ 
+      </div>
+    </footer>
+
+    </div>
+    </section>
+
   </body>
 </html>
