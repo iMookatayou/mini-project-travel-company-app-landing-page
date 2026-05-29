@@ -9,7 +9,6 @@ body {
   background-color: #ffffff;
 }
 
-<<<<<<< Updated upstream
 @font-face {
   font-family: 'Poppins-bold';
   src: url('public/font/Poppins-Bold.ttf') format('truetype');
@@ -23,5 +22,3 @@ body {
   font-style: normal;
   font-weight: 100 1000;
 }
-=======
->>>>>>> Stashed changes
